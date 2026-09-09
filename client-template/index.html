@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1b2a">
+  <meta name="description" content="Digital business profile">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Digital Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <article class="profile-card" id="profileCard">
+
+      <header class="hero">
+        <div class="hero-top">
+          <img id="businessLogo" class="business-logo" alt="Business logo">
+          <span id="categoryBadge" class="category-badge"></span>
+        </div>
+
+        <div class="identity">
+          <div class="photo-ring">
+            <img id="ownerPhoto" class="owner-photo" alt="Profile photo">
+          </div>
+
+          <p id="businessName" class="business-name"></p>
+          <h1 id="ownerName">Name</h1>
+          <p id="designation" class="designation"></p>
+        </div>
+      </header>
+
+      <div class="content">
+
+        <section class="quick-actions" aria-label="Quick actions">
+          <a id="callBtn" class="quick-action quick-action-primary" href="#">
+            <span class="action-icon">☎</span>
+            <span>Call</span>
+          </a>
+          <a id="whatsappBtn" class="quick-action" href="#" target="_blank" rel="noopener">
+            <span class="action-icon">◉</span>
+            <span>WhatsApp</span>
+          </a>
+          <a id="emailBtn" class="quick-action" href="#">
+            <span class="action-icon">✉</span>
+            <span>Email</span>
+          </a>
+          <a id="websiteBtn" class="quick-action" href="#" target="_blank" rel="noopener">
+            <span class="action-icon">↗</span>
+            <span>Website</span>
+          </a>
+        </section>
+
+        <section id="aboutSection" class="profile-section">
+          <div class="section-heading">
+            <span class="section-kicker">Profile</span>
+            <h2>About</h2>
+          </div>
+          <p id="about" class="about-text"></p>
+        </section>
+
+        <section id="servicesSection" class="profile-section">
+          <div class="section-heading">
+            <span class="section-kicker">Expertise</span>
+            <h2>Services</h2>
+          </div>
+          <div id="services" class="services-grid"></div>
+        </section>
+
+        <section id="contactSection" class="profile-section">
+          <div class="section-heading">
+            <span class="section-kicker">Details</span>
+            <h2>Contact</h2>
+          </div>
+
+          <div class="contact-list">
+            <a id="phoneRow" class="contact-row" href="#">
+              <span class="contact-icon">☎</span>
+              <span>
+                <small>Phone</small>
+                <strong id="phoneText"></strong>
+              </span>
+              <span class="row-arrow">↗</span>
+            </a>
+
+            <a id="emailRow" class="contact-row" href="#">
+              <span class="contact-icon">✉</span>
+              <span>
+                <small>Email</small>
+                <strong id="emailText"></strong>
+              </span>
+              <span class="row-arrow">↗</span>
+            </a>
+
+            <a id="mapsRow" class="contact-row" href="#" target="_blank" rel="noopener">
+              <span class="contact-icon">⌖</span>
+              <span>
+                <small>Address</small>
+                <strong id="addressText"></strong>
+              </span>
+              <span class="row-arrow">↗</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="socialSection" class="profile-section">
+          <div class="section-heading">
+            <span class="section-kicker">Online</span>
+            <h2>Connect</h2>
+          </div>
+
+          <div class="social-grid">
+            <a id="instagramBtn" href="#" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+            <a id="linkedinBtn" href="#" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+            <a id="facebookBtn" href="#" target="_blank" rel="noopener">Facebook <span>↗</span></a>
+            <a id="mapsBtn" href="#" target="_blank" rel="noopener">Google Maps <span>↗</span></a>
+          </div>
+        </section>
+
+        <section class="bottom-actions">
+          <button id="saveContact" class="save-contact" type="button">
+            <span>＋</span> Save Contact
+          </button>
+
+          <button id="shareProfile" class="share-profile" type="button">
+            Share Profile
+          </button>
+        </section>
+
+      </div>
+
+      <footer class="footer">
+        <span id="footerBusiness"></span>
+        <span>Digital Profile</span>
+      </footer>
+    </article>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
