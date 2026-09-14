@@ -30,8 +30,8 @@ window.profile = {
   // IMAGES
   // -----------------------------------------------------
 
-  businessLogo: "clients/megha-ahya/assets/images/businesslogo.png",
-  ownerPhoto: "clients/megha-ahya/assets/images/profile_pic.png",
+  businessLogo: "assets/images/businesslogo.png",
+  ownerPhoto: "assets/images/profile_pic.png",
 
   // -----------------------------------------------------
   // IDENTITY
