@@ -31,7 +31,7 @@ window.profile = {
   // -----------------------------------------------------
 
   businessLogo: "clients/megha-ahya/assets/images/businesslogo.png",
-  ownerPhoto: "assets/images/businesslogo.png",
+  ownerPhoto: "clients/megha-ahya/assets/images/profile_pic.png",
 
   // -----------------------------------------------------
   // IDENTITY
