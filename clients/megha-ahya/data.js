@@ -30,7 +30,7 @@ window.profile = {
   // IMAGES
   // -----------------------------------------------------
 
-  businessLogo: "assets/images/ownerlogo.png",
+  businessLogo: "clients/megha-ahya/assets/images/businesslogo.png",
   ownerPhoto: "assets/images/businesslogo.png",
 
   // -----------------------------------------------------
